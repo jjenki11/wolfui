@@ -1,0 +1,8 @@
+{
+    "tagline": "Welcome to the landing page",
+    "workflow_cards": [
+        {"name": "upload", "title": "Upload Data", "color": "blue", "icon": "cloud-upload-alt", "body": "Upload your data."},
+        {"name": "results", "title": "Explore Results", "color": "green", "icon": "poll", "body": "View the results."},
+        {"name": "about", "title": "About", "color": "orange", "icon": "info-circle", "body": "Learn more about the application"}
+    ]
+}

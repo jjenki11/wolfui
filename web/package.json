@@ -1,0 +1,31 @@
+{
+  "name": "appleseed_client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node node_modules/watchify/bin/cmd.js public/js/index.js -o dist/js/bundle.js",
+    "build": "node write_env.js && . ./copy_files.sh && node node_modules/browserify/bin/cmd.js public/js/index.js -o dist/js/bundle.js",
+    "start": "npm run build && node node_modules/nodemon/bin/nodemon.js server.js",
+    "docker": ". ./copy_to_docker.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify-middleware": "^8.1.1",
+    "dexie": "^2.0.4",
+    "dotenv": "^8.0.0",
+    "eventemitter3": "^4.0.0",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "page": "^1.11.4",
+    "promise-worker": "^2.0.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "ncp": "^2.0.0",
+    "nodemon": "^1.19.1",
+    "watchify": "^3.11.1"
+  }
+}

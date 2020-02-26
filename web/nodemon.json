@@ -1,0 +1,8 @@
+{
+    "events": {
+      "restart": "npm run build"
+    },
+    "verbose": false,
+    "ignore": ["dist/*"],
+    "ext": "js css html env"
+}
