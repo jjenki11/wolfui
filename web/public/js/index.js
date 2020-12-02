@@ -3,7 +3,7 @@ let isEdge = !isIE && !!window.StyleMedia;
 
 if (isIE || isEdge) {
     $(document).ready(() => {
-        $("#main").html("<h4 style='margin-top: 1em;'>Internet Explorer or Edge Detected. Please Open Sinister Kid In Chrome.</h4>");
+        $("#main").html("<h4 style='margin-top: 1em;'>Internet Explorer or Edge Detected. Please Open Appleseed In Chrome.</h4>");
     });
 
     throw new Error();
